@@ -116,7 +116,7 @@ body {
   color: $text;
 
   ::selection {
-    background-color: orange;
+    background-color: $background;
   }
 }
 ol,

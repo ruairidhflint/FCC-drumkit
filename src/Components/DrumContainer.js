@@ -22,6 +22,7 @@ function DrumContainer() {
   useEffect(() => {
     window.addEventListener('keydown', keypress);
   }, []);
+
   return (
     <div id="drum-machine">
       <div className="row">

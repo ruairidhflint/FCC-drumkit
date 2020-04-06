@@ -22,7 +22,7 @@ function DrumPad(props) {
   }
 
   return (
-    <div onClick={click} className={`drum-pad`} id={`audio-${props.letter}`}>
+    <div tabindex={props.tabIndex} onClick={click} className={`drum-pad`} id={`audio-${props.letter}`}>
       <audio className="clip" id={props.letter} src={props.sound.sound} />
       {props.letter}
     </div>

@@ -42,6 +42,11 @@
     transition: transform 0.3s ease-in-out;
     transform: scale(1.04);
   }
+
+  &:focus {
+    outline: none;
+    border: 1px solid orange;
+  }
 }
 
 .active {
@@ -76,6 +81,11 @@
     &:hover {
       color: $highlightBlue;
       transition: color 0.2s ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+      color: orange;
     }
   }
 }

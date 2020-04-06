@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DrumPad from './DrumPad';
 
-import Clap from '../Sounds/Clap.wav';
-import Crash from '../Sounds/Crash.wav';
-import Perc01 from '../Sounds/Perc01.wav';
-import Perc02 from '../Sounds/Perc02.wav';
-import ClHat from '../Sounds/ClHat.wav';
-import Snare01 from '../Sounds/Snare01.wav';
-import Snare02 from '../Sounds/Snare02.wav';
-import Tom01 from '../Sounds/Tom01.wav';
-import Tom02 from '../Sounds/Tom02.wav';
+import * as sounds from '../Sounds/index';
 
 function DrumContainer({ setCurrentSound }) {
   const [keyPressed, setKeyPressed] = useState(null);
@@ -30,21 +22,21 @@ function DrumContainer({ setCurrentSound }) {
           letter="Q"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Clap}
+          sound={sounds.bass}
           setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="W"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Crash}
+          sound={sounds.clap}
           setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="E"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Perc01}
+          sound={sounds.cowbell}
           setCurrentSound={setCurrentSound}
         />
       </div>
@@ -53,21 +45,21 @@ function DrumContainer({ setCurrentSound }) {
           letter="A"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Perc02}
+          sound={sounds.hihat}
           setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="S"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={ClHat}
+          sound={sounds.kick}
           setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="D"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Snare01}
+          sound={sounds.maraca}
           setCurrentSound={setCurrentSound}
         />
       </div>
@@ -76,21 +68,21 @@ function DrumContainer({ setCurrentSound }) {
           letter="Z"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Snare02}
+          sound={sounds.openHat}
           setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="X"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Tom01}
+          sound={sounds.snare}
           setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="C"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
-          sound={Tom02}
+          sound={sounds.punch}
           setCurrentSound={setCurrentSound}
         />
       </div>

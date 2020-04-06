@@ -2,7 +2,7 @@ import React from 'react';
 
 function DrumPad(props) {
   const click = () => {
-    props.setCurrentSound(`audio-${props.letter}`);
+    props.setCurrentSound(props.sound.name);
     const div = document.getElementById(`audio-${props.letter}`);
     div.classList.add('hello');
     const audio = document.getElementById(props.letter);
@@ -22,7 +22,7 @@ function DrumPad(props) {
 
   return (
     <div onClick={click} className={`drum-pad`} id={`audio-${props.letter}`}>
-      <audio className="clip" id={props.letter} src={props.sound} />
+      <audio className="clip" id={props.letter} src={props.sound.sound} />
       {props.letter}
     </div>
   );

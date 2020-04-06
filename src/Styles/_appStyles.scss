@@ -28,6 +28,7 @@
 .drum-pad {
   width: 125px;
   height: 125px;
+  box-sizing: border-box;
   border: 1px solid $text;
   transition: opacity 0.2s ease-in-out;
   cursor: pointer;
@@ -39,13 +40,13 @@
 
   &:hover {
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.02);
+    transform: scale(1.04);
   }
 }
 
 .active {
   transition: border 0.2s ease-in-out;
-  border: 1px solid $orangeMain;
+  border: 2px solid $orangeMain;
 }
 
 #display {

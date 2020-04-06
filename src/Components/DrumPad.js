@@ -13,7 +13,7 @@ function DrumPad(props) {
   };
 
   const removeClass = (elem, removed) => {
-    setTimeout(() => elem.classList.remove(removed), 300);
+    setTimeout(() => elem.classList.remove(removed), 250);
   };
 
   if (props.keyPressed === props.letter) {

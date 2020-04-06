@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 
 function DrumPad(props) {
-  let active;
-
   const click = () => {
+    const div = document.getElementById(`audio-${props.letter}`);
+    div.classList.add('hello');
     const audio = document.getElementById(props.letter);
     audio.currentTime = 0;
-    active = {border: '1px solid orange'};
     audio.play();
+    removeClass(div, 'hello');
+    props.setKeyPressed(null);
+  };
+
+  const removeClass = (elem, removed) => {
+    setTimeout(() => elem.classList.remove(removed), 200);
   };
 
   if (props.keyPressed === props.letter) {
@@ -15,12 +20,7 @@ function DrumPad(props) {
   }
 
   return (
-    <div
-    style={active}
-      onClick={click}
-      className={`drum-pad`}
-      id={`audio-${props.letter}`}
-    >
+    <div onClick={click} className={`drum-pad`} id={`audio-${props.letter}`}>
       <audio className="clip" id={props.letter} src={props.sound} />
       {props.letter}
     </div>

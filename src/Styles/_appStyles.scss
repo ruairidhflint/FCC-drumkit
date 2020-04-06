@@ -49,6 +49,20 @@
   border: 3px solid $orangeMain;
 }
 
+@media (max-width: 600px) {
+  #drum-machine {
+    width: 95vw;
+    height: 77vh;
+    border: none;
+  }
+
+  .drum-pad {
+    width: 28%;
+    height: 80%;
+  }
+}
+
+
 #display {
   font-size: 1.5rem;
   margin-top: 3rem;

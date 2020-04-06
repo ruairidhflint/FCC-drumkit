@@ -7,19 +7,14 @@ import DrumContainer from './Components/DrumContainer';
 import Display from './Components/Display';
 
 function App() {
-  const [currentSound, setCurrentSound] = useState(null);
+  const [currentSoundName, setCurrentSoundName] = useState(null);
 
   return (
     <div className="App">
-      <DrumContainer setCurrentSound={setCurrentSound} />
-      <Display currentSound={currentSound} />
+      <DrumContainer setCurrentSound={setCurrentSoundName} />
+      <Display currentSound={currentSoundName} />
     </div>
   );
 }
 
 export default App;
-
-// TODO:
-// Tidy code
-// Add ability to tab(?)
-// Deploy

@@ -1,7 +1,11 @@
 import React from 'react';
 
-function DrumPad() {
-  return <div id="drum-machine">{/* Drums to be inserted here  */}</div>;
+function DrumPad(props) {
+  return (
+    <div class="drum-pad" id={props.letter}>
+      {props.letter}
+    </div>
+  );
 }
 
 export default DrumPad;

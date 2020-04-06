@@ -34,7 +34,6 @@ function DrumPad(props) {
 
   return (
     <div
-      tabindex={props.tabIndex}
       onClick={click}
       className={`drum-pad`}
       id={`audio-${props.letter}`}

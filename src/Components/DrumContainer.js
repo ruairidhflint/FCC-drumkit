@@ -26,7 +26,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.bass}
           setCurrentSound={setCurrentSound}
-          tabIndex="1"
         />
         <DrumPad
           letter="W"
@@ -34,7 +33,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.clap}
           setCurrentSound={setCurrentSound}
-          tabIndex="2"
         />
         <DrumPad
           letter="E"
@@ -42,7 +40,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.cowbell}
           setCurrentSound={setCurrentSound}
-          tabIndex="3"
         />
       </div>
       <div className="row">
@@ -52,7 +49,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.hihat}
           setCurrentSound={setCurrentSound}
-          tabIndex="4"
         />
         <DrumPad
           letter="S"
@@ -60,7 +56,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.kick}
           setCurrentSound={setCurrentSound}
-          tabIndex="5"
         />
         <DrumPad
           letter="D"
@@ -68,7 +63,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.maraca}
           setCurrentSound={setCurrentSound}
-          tabIndex="6"
         />
       </div>
       <div className="row">
@@ -78,7 +72,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.openHat}
           setCurrentSound={setCurrentSound}
-          tabIndex="7"
         />
         <DrumPad
           letter="X"
@@ -86,7 +79,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.snare}
           setCurrentSound={setCurrentSound}
-          tabIndex="8"
         />
         <DrumPad
           letter="C"
@@ -94,7 +86,6 @@ function DrumContainer({ setCurrentSound }) {
           setKeyPressed={setKeyPressed}
           sound={sounds.punch}
           setCurrentSound={setCurrentSound}
-          tabIndex="9"
         />
       </div>
     </div>

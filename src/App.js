@@ -17,3 +17,10 @@ function App() {
 }
 
 export default App;
+
+
+// TODO:
+// Make whole design responsive
+// Make index file to import files
+// Rename files for accuracy
+// Deploy

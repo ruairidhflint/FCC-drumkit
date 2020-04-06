@@ -21,3 +21,4 @@ export default App;
 // TODO:
 // Make whole design responsive
 // Deploy
+// Replace color var names

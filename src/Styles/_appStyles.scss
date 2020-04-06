@@ -12,7 +12,7 @@
 #drum-machine {
   width: 480px;
   height: 480px;
-  border: 1px solid $text;
+  // border: 1px solid $text;
   box-sizing: border-box;
   padding: 12px 2px;
 
@@ -35,21 +35,23 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  transition: border 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
   &:hover {
-    opacity: 0.6;
-    transition: opacity 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
   }
 }
 
-.hello {
+.active {
   transition: border 0.2s ease-in-out;
-  border: 1px solid orange;
+  border: 1px solid $orangeMain;
 }
 
 #display {
-  font-size: 2rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
   height: 2rem;
+  color: $text;
+  letter-spacing: 0.2rem;
 }

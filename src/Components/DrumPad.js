@@ -4,16 +4,16 @@ function DrumPad(props) {
   const click = () => {
     props.setCurrentSound(props.sound.name);
     const div = document.getElementById(`audio-${props.letter}`);
-    div.classList.add('hello');
+    div.classList.add('active');
     const audio = document.getElementById(props.letter);
     audio.currentTime = 0;
     audio.play();
-    removeClass(div, 'hello');
+    removeClass(div, 'active');
     props.setKeyPressed(null);
   };
 
   const removeClass = (elem, removed) => {
-    setTimeout(() => elem.classList.remove(removed), 200);
+    setTimeout(() => elem.classList.remove(removed), 300);
   };
 
   if (props.keyPressed === props.letter) {

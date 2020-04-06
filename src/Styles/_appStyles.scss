@@ -10,11 +10,11 @@
 }
 
 #drum-machine {
-  width: 480px;
-  height: 480px;
-  // border: 1px solid $text;
+  width: 500px;
+  height: 500px;
+  border: 1px solid $text;
   box-sizing: border-box;
-  padding: 12px 2px;
+  padding: 15px 5px;
 
   .row {
     width: 100%;
@@ -26,8 +26,8 @@
 }
 
 .drum-pad {
-  width: 125px;
-  height: 125px;
+  width: 130px;
+  height: 130px;
   box-sizing: border-box;
   border: 1px solid $text;
   transition: opacity 0.2s ease-in-out;
@@ -45,8 +45,8 @@
 }
 
 .active {
-  transition: border 0.2s ease-in-out;
-  border: 2px solid $orangeMain;
+  transition: border 70ms ease-in-out;
+  border: 3px solid $orangeMain;
 }
 
 #display {
@@ -66,4 +66,3 @@
     }
   }
 }
-

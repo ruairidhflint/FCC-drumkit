@@ -1,3 +1,4 @@
+// Libraries
 import React, { useState } from 'react';
 import './App.scss';
 
@@ -19,7 +20,6 @@ function App() {
 export default App;
 
 // TODO:
-// Replace color var names
 // Tidy code
 // Add ability to tab(?)
 // Deploy

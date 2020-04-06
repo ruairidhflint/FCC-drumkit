@@ -1,6 +1,8 @@
+// Libraries
 import React, { useState, useEffect } from 'react';
 import DrumPad from './DrumPad';
 
+// Sounds
 import * as sounds from '../Sounds/index';
 
 function DrumContainer({ setCurrentSound }) {

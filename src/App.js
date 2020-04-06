@@ -3,11 +3,15 @@ import './App.scss';
 
 // Components
 import DrumContainer from './Components/DrumContainer';
+import Display from './Components/Display';
 
 function App() {
+  const [currentSound, setCurrentSound] = useState('');
+
   return (
     <div className="App">
-      <DrumContainer />
+      <DrumContainer setCurrentSound={setCurrentSound} />
+      <Display currentSound={currentSound} />
     </div>
   );
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 
-function Display() {
-    return (
-        <h1>Display me baby!</h1>
-    )
+function Display({ currentSound }) {
+  return <h1 id="display">{currentSound}</h1>;
 }
 
 export default Display;

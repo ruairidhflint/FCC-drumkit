@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -45,4 +46,10 @@
 .hello {
   transition: border 0.2s ease-in-out;
   border: 1px solid orange;
+}
+
+#display {
+  font-size: 2rem;
+  margin-top: 2rem;
+  height: 2rem;
 }

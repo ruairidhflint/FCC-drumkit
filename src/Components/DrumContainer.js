@@ -11,7 +11,7 @@ import Snare02 from '../Sounds/Snare02.wav';
 import Tom01 from '../Sounds/Tom01.wav';
 import Tom02 from '../Sounds/Tom02.wav';
 
-function DrumContainer() {
+function DrumContainer({ setCurrentSound }) {
   const [keyPressed, setKeyPressed] = useState(null);
 
   const keypress = (e) => {
@@ -31,18 +31,21 @@ function DrumContainer() {
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Clap}
+          setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="W"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Crash}
+          setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="E"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Perc01}
+          setCurrentSound={setCurrentSound}
         />
       </div>
       <div className="row">
@@ -51,18 +54,21 @@ function DrumContainer() {
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Perc02}
+          setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="S"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={ClHat}
+          setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="D"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Snare01}
+          setCurrentSound={setCurrentSound}
         />
       </div>
       <div className="row">
@@ -71,18 +77,21 @@ function DrumContainer() {
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Snare02}
+          setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="X"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Tom01}
+          setCurrentSound={setCurrentSound}
         />
         <DrumPad
           letter="C"
           keyPressed={keyPressed}
           setKeyPressed={setKeyPressed}
           sound={Tom02}
+          setCurrentSound={setCurrentSound}
         />
       </div>
     </div>

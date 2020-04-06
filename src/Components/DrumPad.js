@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function DrumPad(props) {
   const click = () => {
+    props.setCurrentSound(`audio-${props.letter}`);
     const div = document.getElementById(`audio-${props.letter}`);
     div.classList.add('hello');
     const audio = document.getElementById(props.letter);

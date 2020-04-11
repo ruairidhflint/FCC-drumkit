@@ -1,5 +1,5 @@
 // Libraries
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function DrumPad(props) {
   // Function to play sound and visualise click
@@ -32,6 +32,10 @@ function DrumPad(props) {
     click();
   }
 
+  useEffect(() => {
+    const audio = document.getElementById(props.letter);
+    audio.load();
+  }, [props.letter]);
   return (
     <div
       onClick={click}
